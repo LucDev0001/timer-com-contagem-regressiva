@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cronômetro - Relógio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+       
+
+
+</head>
+<body>
+    <audio id="sound" src="alarm.mp3" style="display: none;"></audio>
+
+    <div class="container">
+        <h2>Cronômetro</h2>
+
+        <div class="clock">
+            <div class="hand minute-hand" id="minute-hand"></div>
+            <div class="hand second-hand" id="second-hand"></div>
+        </div>
+
+        <div class="digital-display" id="digital-display">00:00</div>
+
+        
+
+        <div class="set">
+            <select id="minutos" name="minutos"></select>
+            <h1>:</h1>
+            <select id="segundos" name="segundos"></select>
+        </div>
+
+        <br/>
+        <button id="comecar"><img width="20" height="20" src="https://img.icons8.com/fluency/48/play--v1.png" alt="play--v1"/></button>
+    </div><!--container-->
+
+    <script src="script.js"></script>
+</body>
+</html>
